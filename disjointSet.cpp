@@ -57,14 +57,14 @@ void unionDSU(DisjointSet * set, int child1, int child2){
     */
     /** Ranks as size
      * if(set->ranks[representative1] < set->ranks[representative2]){
-     *  swap(representative1, representative2);
+     *  std::swap(representative1, representative2);
      * }
      * set->parents[representative2] = representative1;
      * set->ranks[representative1] += set->ranks[representative2];
     */
     /** Ranks as depth
      * if(set->ranks[representative1] < set->ranks[representative2]){
-     *  swap(representative1, representative2);
+     *  std::swap(representative1, representative2);
      * }
      * set->parents[representative2] = representative1;
      * if(set->ranks[representative1] == set->ranks[representative2])
