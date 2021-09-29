@@ -8,9 +8,9 @@ struct DisjointSet{
 
 DisjointSet createDSU(int size);
 
-int findDSU(DisjointSet * set, int child);
+int findDSU(DisjointSet & set, int child);
 
-void unionDSU(DisjointSet * set, int child1, int child2);
+void unionDSU(DisjointSet & set, int child1, int child2);
 
 void printDSU(DisjointSet set);
 #endif // __DISJOINTSET_H__
