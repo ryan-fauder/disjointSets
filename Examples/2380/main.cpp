@@ -13,6 +13,8 @@ int main(){
   set = createDSU(amount_banks);
   while(loop--){
     cin >> operation >> first >> second;
+    first--;
+    second--;
     if(operation == 'C'){
       if(findDSU(set, first) == findDSU(set, second))
         cout << "S" << breakl;
